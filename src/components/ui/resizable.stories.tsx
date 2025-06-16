@@ -1,14 +1,24 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
-import { ResizablePanelGroup } from './resizable';
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup
+} from './resizable';
 
-const meta: Meta<typeof ResizablePanelGroup> = {
-  title: 'ui/ResizablePanelGroup',
-  component: ResizablePanelGroup,
+const meta: Meta<typeof ResizableHandle> = {
+  title: 'ui/ResizableHandle',
+  component: ResizableHandle,
 };
 export default meta;
 
-type Story = StoryObj<typeof ResizablePanelGroup>;
+type Story = StoryObj<typeof ResizableHandle>;
 
 export const Default: Story = {
-  args: {},
+  render: () => (
+    <ResizablePanelGroup direction="horizontal">
+      <ResizablePanel>One</ResizablePanel>
+      <ResizableHandle />
+      <ResizablePanel>Two</ResizablePanel>
+    </ResizablePanelGroup>
+  ),
 };
