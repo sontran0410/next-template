@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
-import { Toggle } from './toggle';
+import {
+  Toggle
+} from './toggle';
 
 const meta: Meta<typeof Toggle> = {
   title: 'ui/Toggle',
@@ -10,5 +12,7 @@ export default meta;
 type Story = StoryObj<typeof Toggle>;
 
 export const Default: Story = {
-  args: {},
+  render: () => (
+    <Toggle>Toggle</Toggle>
+  ),
 };

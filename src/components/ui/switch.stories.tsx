@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
-import { Switch } from './switch';
+import {
+  Switch
+} from './switch';
 
 const meta: Meta<typeof Switch> = {
   title: 'ui/Switch',
@@ -10,5 +12,7 @@ export default meta;
 type Story = StoryObj<typeof Switch>;
 
 export const Default: Story = {
-  args: {},
+  render: () => (
+    <Switch />
+  ),
 };
