@@ -1,4 +1,17 @@
+"use client";
+
+import { graphql } from "@/graphql";
+
 import Image from "next/image";
+
+const PeopleCountQuery = graphql(`
+  query PeopleCount {
+    allPeople {
+      totalCount
+    }
+  }
+`);
+console.log(PeopleCountQuery);
 
 export default function Home() {
   return (

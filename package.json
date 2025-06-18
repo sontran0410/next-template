@@ -11,6 +11,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@graphql-typed-document-node/core": "^3.2.0",
     "@hookform/resolvers": "^5.1.1",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-alert-dialog": "^1.1.14",
@@ -43,6 +44,7 @@
     "cmdk": "^1.1.1",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
+    "graphql": "^16.11.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.515.0",
     "next": "15.3.3",
@@ -59,8 +61,12 @@
     "zod": "^3.25.64"
   },
   "devDependencies": {
+    "@0no-co/graphqlsp": "^1.12.16",
     "@chromatic-com/storybook": "^4",
     "@eslint/eslintrc": "^3",
+    "@graphql-codegen/cli": "^5.0.7",
+    "@graphql-codegen/schema-ast": "^4.1.0",
+    "@parcel/watcher": "^2.5.1",
     "@storybook/addon-a11y": "^9.0.10",
     "@storybook/addon-docs": "^9.0.10",
     "@storybook/addon-vitest": "^9.0.10",
